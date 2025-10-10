@@ -90,21 +90,21 @@ if (userInput === 'marketing') {
     console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
 }
 
-console.log(userInput + ' is een leuke afdeling om te werken. Er werken op dit moment ' + )
+console.log(userInput + ' is een leuke afdeling om te werken. Er werken op dit moment ' + departments[userInput].numberOfEmployees + ' medewerkers.');
 
-//
-// const userInput= prompt('Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.' +
-//     '0: ' + departments.marketing.jobs[0].title + ', 1 ' + departments.marketing.jobs[1].title + ', 2 ' + departments.marketing.jobs[2].title + ', 3 ' + departments.marketing.jobs[3].title);
-// console.log(userInput);
-//
-// if (userInput === '0') {
-//     console.log('Je koos ' + departments.marketing.jobs[0].title + '. Een uitdagende rol! ' + departments.marketing.jobs[0].description);
-// } else if (userInput === '1') {
-//     console.log('Je koos ' + departments.marketing.jobs[1].title + '. Een uitdagende rol! ' + departments.marketing.jobs[1].description);
-// } else if (userInput === '2') {
-//     console.log('Je koos ' + departments.marketing.jobs[2].title + '. Een uitdagende rol! ' + departments.marketing.jobs[2].description);
-// } else if (userInput === '3') {
-//     console.log('Je koos ' + departments.marketing.jobs[3].title + '. Een uitdagende rol! ' + departments.marketing.jobs[3].description);
-// } else if (userInput) {
-//     console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
-// }
+
+const userInput2 = prompt('Je koos ' + userInput + '. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in. ' +
+    '0: ' + departments[userInput].jobs[0].title + ', 1: ' + departments[userInput].jobs[1].title + ', 2: ' + departments[userInput].jobs[2].title + ', 3: ' + departments[userInput].jobs[3].title);
+console.log(userInput2);
+
+if (userInput2 === '0') {
+    console.log('Je koos ' + departments[userInput].jobs[0].title + '. Een uitdagende rol! ' + departments[userInput].jobs[0].description);
+} else if (userInput2 === '1') {
+    console.log('Je koos ' + departments[userInput].jobs[1].title + '. Een uitdagende rol! ' + departments[userInput].jobs[1].description);
+} else if (userInput2 === '2') {
+    console.log('Je koos ' + departments[userInput].jobs[2].title + '. Een uitdagende rol! ' + departments[userInput].jobs[2].description);
+} else if (userInput2 === '3') {
+    console.log('Je koos ' + departments[userInput].jobs[3].title + '. Een uitdagende rol! ' + departments[userInput].jobs[3].description);
+} else if (userInput2) {
+    console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
+}
